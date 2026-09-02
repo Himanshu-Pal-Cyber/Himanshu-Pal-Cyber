@@ -89,9 +89,33 @@ Entry-level **Cybersecurity Analyst** with an MCA in Cyber Security (Bennett Uni
 - C, C++ Certification – VSA Institute, Ghaziabad
 
 ---
+name: Generate Snake
 
-## 🐍 Contribution Snake
+on:
+  schedule:
+    - cron: "0 0 * * *"   # roz raat 12 baje UTC par chalega
+  workflow_dispatch: {}     # manually run karne ke liye
+  push:
+    branches:
+      - main
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Himanshu-Pal-Cyber/Himanshu-Pal-Cyber/output/github-contribution-grid-snake.svg" alt="snake animation" width="900" />
-</p>
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: Platane/snk@v3
+        id: snake-gif
+        with:
+          github_user_name: Himanshu-Pal-Cyber
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
