@@ -2,7 +2,7 @@
 
 # Hi, I'm Himanshu Pal 👋
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&center=true&vCenter=true&width=900&lines=Cybersecurity+Analyst+%7C+SOC+%7C+VAPT;OT%2FICS+%26+SCADA+Security+Enthusiast;CEH+v13+Certified+%7C+MCA+in+Cyber+Security" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&center=true&vCenter=true&width=900&lines=Cybersecurity+Analyst+%7C+SOC+%7C+VAPT;OT%2FICS+%26+SCADA+Security+Enthusiast" alt="Typing SVG" />
 
 <p>
   <a href="https://www.linkedin.com/in/himanshu-pal-3b25231b2" target="_blank">LinkedIn</a> •
@@ -18,14 +18,14 @@
 
 ## 🛡️ About Me
 
-Entry-level **Cybersecurity Analyst** with an MCA in Cyber Security (Bennett University) and hands-on, multi-internship experience across security monitoring, log & packet analysis, vulnerability assessment and penetration testing (VAPT), ethical hacking, and OT/ICS security. Skilled in Kali Linux, Nmap, Wireshark, Metasploit, and Burp Suite for threat detection and security testing, with working knowledge of OWASP Top 10, TCP/IP, IEC 61850/104, SCADA, and incident response fundamentals. Completed **CEH v13 (EC-Council)**. Currently seeking an entry-level **SOC Analyst (L1)**, **Cybersecurity Analyst**, or **VAPT Engineer** role.
+Entry-level **Cybersecurity Analyst** with an MCA in Cyber Security (Bennett University) and hands-on, multi-internship experience across security monitoring, log & packet analysis, vulnerability assessment, digital forensics, and OT/SCADA security. Passionate about threat hunting, network defense, and creating innovative security solutions.
 
 ---
 
 ## 🚀 Featured Projects
 
-- 🕵️ **Cyber Crime Investigation Dashboard (CCID)** — Full-stack DFIR web platform (React/TypeScript, FastAPI/Python, Supabase/PostgreSQL) with automated forensic parsers (PCAP, EVTX, browser history, USB/registry artifacts) and an IOC correlation engine that auto-generates attack-chain graphs and chain-of-custody reports.
-- 🎯 **Junior Penetration Lab** — TryHackMe Junior Penetration Tester pathway: reconnaissance, port scanning (Nmap), exploitation, and post-exploitation across multiple lab environments, with documented vulnerability findings and hardening recommendations.
+- 🕵️ **Cyber Crime Investigation Dashboard (CCID)** — Full-stack DFIR web platform (React/TypeScript, FastAPI/Python, Supabase/PostgreSQL) with automated forensic parsers (PCAP, EVTX, browser artifacts) for rapid case investigation and timeline reconstruction.
+- 🎯 **Junior Penetration Lab** — TryHackMe Junior Penetration Tester pathway: reconnaissance, port scanning (Nmap), exploitation, and post-exploitation across multiple lab environments, with detailed writeups and remediation strategies.
 - 📡 **Packet Sniffing Project** — Captured and analyzed network traffic with Wireshark to detect protocol misuse and insecure traffic, with a technical hardening report.
 
 ---
@@ -89,33 +89,5 @@ Entry-level **Cybersecurity Analyst** with an MCA in Cyber Security (Bennett Uni
 - C, C++ Certification – VSA Institute, Ghaziabad
 
 ---
-name: Generate Snake
 
-on:
-  schedule:
-    - cron: "0 0 * * *"   # roz raat 12 baje UTC par chalega
-  workflow_dispatch: {}     # manually run karne ke liye
-  push:
-    branches:
-      - main
-
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: Platane/snk@v3
-        id: snake-gif
-        with:
-          github_user_name: Himanshu-Pal-Cyber
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-
-      - uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+![Snake animation](https://github.com/Himanshu-Pal-Cyber/Himanshu-Pal-Cyber/blob/output/github-contribution-grid-snake.svg)
