@@ -90,4 +90,4 @@ Entry-level **Cybersecurity Analyst** with an MCA in Cyber Security (Bennett Uni
 
 ---
 
-![Snake animation](https://github.com/Himanshu-Pal-Cyber/Himanshu-Pal-Cyber/blob/output/github-contribution-grid-snake.svg)
+![Snake animation](https://raw.githubusercontent.com/Himanshu-Pal-Cyber/Himanshu-Pal-Cyber/output/github-contribution-grid-snake.svg)
